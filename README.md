@@ -1,12 +1,12 @@
 ## Screenshot
 
 ### Halaman Bahan
-![Halaman Bahan](docs/bahan.html.png)
+![Halaman Bahan](docs/bahan.png)
 
 ### Halaman Menu
-![Halaman Menu](docs/menu.html 1.png)
-![Halaman Menu](docs/menu.html 2.png)
+![Halaman Menu 1](docs/menu-1.png)
+![Halaman Menu 2](docs/menu-2.png)
 
 ### Halaman Tambah Menu
-![Halaman Tambah Menu](docs/tambahBahan.html1.png)
-![Halaman Tambah Menu](docs/tambahBahan.html2.png)
+![Halaman Tambah Menu 1](docs/tambah-menu-1.png)
+![Halaman Tambah Menu 2](docs/tambah-menu-2.png)
