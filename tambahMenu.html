@@ -6,46 +6,109 @@
 </head>
 <body>
 
-<h1>Tambah Menu</h1>
+<header>
+  <h1>Tambah Menu</h1>
+</header>
 
-<table border="1" cellpadding="6" cellspacing="0">
-  <tr>
-    <th>Bahan</th>
-    <th>Qty per Gelas</th>
-    <th>Satuan</th>
-  </tr>
-  <tr>
-    <td>Kopi</td>
-    <td>1</td>
-    <td>saset</td>
-  </tr>
-  <tr>
-    <td>Susu full cream</td>
-    <td>60</td>
-    <td>ml</td>
-  </tr>
-  <tr>
-    <td>Susu regal</td>
-    <td>35</td>
-    <td>ml</td>
-  </tr>
-  <tr>
-    <td>Krim kental manis</td>
-    <td>12,5</td>
-    <td>ml</td>
-  </tr>
-  <tr>
-    <td>Regal</td>
-    <td>2</td>
-    <td>pcs</td>
-  </tr>
-</table>
+<nav>
+  <a href="bahan.html">Bahan</a> |
+  <a href="menu.html">Menu</a> |
+  <a href="tambahMenu.html">Tambah Menu</a>
+</nav>
 
-<br>
+<main>
 
-<a href="bahan.html">Bahan</a> |
-<a href="menu.html">Menu</a> |
-<a href="tambahMenu.html">Tambah Menu</a>
+  <h2>Form Tambah Menu</h2>
+
+  <form action="#" method="post">
+
+    <p>
+      <label for="nama-menu">Nama Menu</label><br>
+      <input type="text" id="nama-menu" name="nama-menu" placeholder="Kopi susu regal">
+    </p>
+
+    <p>
+      <label for="bahan-utama">Pilih Bahan</label><br>
+      <select id="bahan-utama" name="bahan-utama">
+        <option value="kopi">Kopi</option>
+        <option value="susu-full-cream">Susu full cream</option>
+        <option value="susu-regal">Susu regal</option>
+        <option value="krim-kental-manis">Krim kental manis</option>
+        <option value="regal">Regal</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="qty">Qty per Gelas</label><br>
+      <input type="number" id="qty" name="qty" placeholder="60">
+    </p>
+
+    <p>
+      <label for="satuan">Satuan</label><br>
+      <select id="satuan" name="satuan">
+        <option value="ml">ml</option>
+        <option value="gr">gr</option>
+        <option value="pcs">pcs</option>
+        <option value="saset">saset</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="gambar">Upload Gambar Produk</label><br>
+      <input type="file" id="gambar" name="gambar" accept="image/*">
+    </p>
+
+    <p>
+      <label for="catatan">Catatan Tambahan</label><br>
+      <textarea id="catatan" name="catatan" rows="4" cols="40" placeholder="Contoh: seduh kopi dulu sebelum campur susu"></textarea>
+    </p>
+
+    <p>
+      <button type="submit">Simpan Menu</button>
+    </p>
+
+  </form>
+
+  <h2>Bahan yang Sudah Ditambahkan</h2>
+
+  <table border="1" cellpadding="6" cellspacing="0">
+    <tr>
+      <th>Bahan</th>
+      <th>Qty per Gelas</th>
+      <th>Satuan</th>
+    </tr>
+    <tr>
+      <td>Kopi</td>
+      <td>1</td>
+      <td>saset</td>
+    </tr>
+    <tr>
+      <td>Susu full cream</td>
+      <td>60</td>
+      <td>ml</td>
+    </tr>
+    <tr>
+      <td>Susu regal</td>
+      <td>35</td>
+      <td>ml</td>
+    </tr>
+    <tr>
+      <td>Krim kental manis</td>
+      <td>12,5</td>
+      <td>ml</td>
+    </tr>
+    <tr>
+      <td>Regal</td>
+      <td>2</td>
+      <td>pcs</td>
+    </tr>
+  </table>
+
+</main>
+
+<footer>
+  <p>@Copyright xemn</p>
+</footer>
 
 </body>
 </html>
