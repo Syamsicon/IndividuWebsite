@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-<meta charset="UTF-8">
-<title>Menu</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<h1>Menu</h1>
+  <body>
+    <header>
+      <h1>Stok Bahan Minuman</h1>
+    </header>
 
-<nav>
-  <a href="bahan.html">Bahan</a> |
-  <a href="menu.html">Menu</a> |
-  <a href="tambahMenu.html">Tambah Menu</a>
-</nav>
+    <nav>
+      <a href="bahan.html">Bahan</a> |
+      <a href="menu.html">Menu</a> |
+      <a href="tambahMenu.html">Tambah Menu</a>
+    </nav>
 
-<table border="1">
-  <tr>
-    <th>Nama Menu</th>
-    <th>Jumlah Bahan</th>
-    <th>Cost/Gelas</th>
-    <th>Bisa Dibuat</th>
-    <th>Bahan Tercepat Habis</th>
-  </tr>
-  <tr>
-    <td>Kopi susu regal</td>
-    <td>5</td>
-    <td>5.624</td>
-    <td>10 gelas</td>
-    <td>Kopi</td>
-  </tr>
-</table>
+    <main>
+      <h2>Daftar Menu</h2>
 
-<br>
-<img src="img/kopsus-regal.jpeg" width="300">
-<p>Gambar Kopi susu regal</p>
+      <table>
+        <tr>
+          <th>Nama Menu</th>
+          <th>Jumlah Bahan</th>
+          <th>Cost/Gelas</th>
+          <th>Bisa Dibuat</th>
+          <th>Bahan Tercepat Habis</th>
+        </tr>
+        <tr>
+          <td>Kopi Susu Regal</td>
+          <td>5</td>
+          <td>4.197</td>
+          <td>10 gelas</td>
+          <td>Kopi</td>
+        </tr>
+        <tr>
+          <td>Jasmine Tea</td>
+          <td>3</td>
+          <td>3.810</td>
+          <td>6 gelas</td>
+          <td>Susu UHT</td>
+        </tr>
+        <tr>
+          <td>Strawberry Cheese Cloud</td>
+          <td>5</td>
+          <td>6.809</td>
+          <td>7 gelas</td>
+          <td>Susu UHT / Strawberry jam</td>
+        </tr>
+        <tr>
+          <td>Americanorage</td>
+          <td>2</td>
+          <td>2.187</td>
+          <td>10 gelas</td>
+          <td>Kopi</td>
+        </tr>
+      </table>
 
-<table border="1">
-  <tr>
-    <th>Nama Menu</th>
-    <th>Jumlah Bahan</th>
-    <th>Cost/Gelas</th>
-    <th>Bisa Dibuat</th>
-    <th>Bahan Tercepat Habis</th>
-  </tr>
-  <tr>
-    <td>Americorange</td>
-    <td>3</td>
-    <td>5.000</td>
-    <td>7 gelas</td>
-    <td>jeruk</td>
-  </tr>
-</table>
+      <div class="galeri-menu">
+        <figure>
+          <img src="img/kopsus-regal.jpeg" alt="Kopi susu regal dalam gelas kaca dengan taburan remahan Regal di atasnya">
+          <figcaption>Kopi susu regal</figcaption>
+        </figure>
 
-<br>
-<img src="img/americorange.jpeg" width="300">
-<p>Gambar americorange</p>
-
-
-
-</body>
+        <figure>
+          <img src="img/americorange.jpeg" alt="Americorange, kopi americano dengan garnish kulit jeruk di dalam gelas">
+          <figcaption>Americorange</figcaption>
+        </figure>
+      </div>
+      
+    </main>
+  </body>
 </html>
