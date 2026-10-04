@@ -19,6 +19,9 @@ header h1 {
 nav {
   background-color: #C9792E;
   padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav a {
@@ -142,4 +145,93 @@ footer {
   padding: 15px;
   font-size: 13px;
   margin-top: 30px;
+}
+
+/* Font properties */
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body, td, th, label {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+/* Text alignment */
+header h1 {
+  text-align: center;
+}
+
+th {
+  text-align: left;
+}
+
+label {
+  text-align: left;
+}
+
+.cost-label {
+  text-align: right;
+}
+
+/* List styling */
+.menu-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.menu-card ul li {
+  margin-bottom: 4px;
+}
+
+/* Div/span grouping */
+.menu-card {
+  background-color: #FFFFFF;
+  border: 1px solid #DCD5C5;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.menu-card h3 {
+  margin-top: 0;
+  color: #3B2A20;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #EFE6D6;
+  color: #3B2A20;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Responsive: nav horizontal -> vertical di layar sempit */
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .menu-card {
+    padding: 12px;
+  }
 }
