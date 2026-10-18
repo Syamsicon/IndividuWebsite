@@ -28,36 +28,17 @@
   <main class="container my-4">
     <h2>Form Tambah Menu</h2>
 
-    <form action="#" method="post">
+    <form id="form-tambah-menu" action="#" method="post">
 
       <label for="nama-menu">Nama Menu</label>
-      <input type="text" id="nama-menu" name="nama-menu" placeholder="Kopi susu regal">
+      <input type="text" id="nama-menu" name="nama-menu" placeholder="Milk Tea">
 
-      <label for="bahan-utama">Pilih Bahan</label>
-      <select id="bahan-utama" name="bahan-utama">
-        <option value="kopi">Kopi</option>
-        <option value="susu-full-cream">Susu full cream</option>
-        <option value="susu-regal">Susu regal</option>
-        <option value="krim-kental-manis">Krim kental manis</option>
-        <option value="regal">Regal</option>
-      </select>
+      <h3>Komposisi Bahan</h3>
+      <div id="daftar-baris-bahan"></div>
 
-      <label for="qty">Qty per Gelas</label>
-      <input type="number" id="qty" name="qty" placeholder="60">
+      <button type="button" id="btn-tambah-bahan">+ Tambah Bahan</button>
 
-      <label for="satuan">Satuan</label>
-      <select id="satuan" name="satuan">
-        <option value="ml">ml</option>
-        <option value="gr">gr</option>
-        <option value="pcs">pcs</option>
-        <option value="saset">saset</option>
-      </select>
-
-      <label for="gambar">Upload Gambar Produk</label>
-      <input type="file" id="gambar" name="gambar" accept="image/*">
-
-      <label for="catatan">Catatan Tambahan</label>
-      <textarea id="catatan" name="catatan" rows="4" placeholder="Contoh: seduh kopi dulu sebelum campur susu"></textarea>
+      <p id="form-pesan" style="display:none; margin-top:10px;"></p>
 
       <button type="submit">Simpan Menu</button>
 
@@ -104,5 +85,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
