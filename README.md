@@ -2,6 +2,7 @@
 
 Aplikasi manajemen bahan & menu BrewIT.
 
+<<<<<<< HEAD
 ## Menjalankan project
 
 ```bash
@@ -33,3 +34,10 @@ Buka http://localhost:5173 di browser.
 - **Daftar Menu** — menampilkan 11 menu BrewIT beserta komposisi bahan dan cost per cup.
 - **Restock Bahan** — form untuk menambah stok bahan yang sudah ada, dilengkapi dengan
   riwayat/log setiap transaksi restock yang dilakukan.
+=======
+### Halaman Menu
+![Halaman Menu 1](docs/menu-1.png)
+
+### Halaman Tambah Menu
+![Halaman Tambah Menu 1](docs/tambah-menu-1.png)
+>>>>>>> 0f452cf3eb7c8a9a893c84df6f3301616e3cee4d
