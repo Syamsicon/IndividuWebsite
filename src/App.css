@@ -1,0 +1,159 @@
+:root {
+  --bg: #121212;
+  --panel: #1c1c1c;
+  --ink: #f2f0ea;
+  --ink-soft: #9b968c;
+  --line: #2e2c28;
+  --accent: #c9792e;
+  --warn: #e07a6b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, sans-serif;
+}
+
+.app {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 24px 32px 0;
+}
+
+.header h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-aktif {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.main {
+  padding: 24px 32px 60px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0 0 14px;
+}
+
+.kosong {
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+.daftar-bahan {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.bahan-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.bahan-card.hampir-habis {
+  border-color: var(--warn);
+}
+
+.bahan-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.bahan-nama { font-weight: 700; }
+.bahan-harga { color: var(--ink-soft); }
+.bahan-stok { margin: 2px 0; font-size: 13px; }
+.bahan-estimasi { margin: 2px 0; font-size: 12px; color: var(--ink-soft); }
+.bahan-estimasi.warning { color: var(--warn); font-weight: 600; }
+
+.daftar-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.kartu-menu {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.kartu-menu h3 { margin: 0 0 6px; font-size: 15px; }
+.menu-batch { font-size: 11px; color: var(--ink-soft); margin: 0 0 6px; }
+.kartu-menu ul { margin: 0 0 8px; padding-left: 18px; font-size: 12px; color: var(--ink-soft); }
+.menu-cost { font-weight: 700; color: var(--accent); font-size: 14px; margin: 0; }
+
+.form-restock {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  max-width: 320px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-restock h3 { margin: 0 0 10px; font-size: 15px; }
+.form-restock label { font-size: 12px; color: var(--ink-soft); margin-top: 8px; }
+.form-restock select,
+.form-restock input {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.form-restock button {
+  margin-top: 14px;
+  background: var(--accent);
+  color: #1b1d18;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.riwayat-restock h3 { font-size: 15px; margin-bottom: 8px; }
+.riwayat-restock ul { list-style: none; padding: 0; margin: 0; }
+.riwayat-restock li {
+  border-bottom: 1px solid var(--line);
+  padding: 8px 0;
+  font-size: 13px;
+}
+.riwayat-waktu { color: var(--ink-soft); font-size: 11px; }
