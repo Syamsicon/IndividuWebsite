@@ -4,6 +4,7 @@ import DaftarBahan from "./components/DaftarBahan";
 import FormRestock from "./components/FormRestock";
 import RiwayatRestock from "./components/RiwayatRestock";
 import DaftarMenu from "./components/DaftarMenu";
+import InspirasiMenu from "./components/InspirasiMenu";
 import bahanAwal from "./data/bahanAwal";
 import menuData from "./data/menuData";
 import "./App.css";
@@ -57,6 +58,14 @@ function App() {
             <h2>Restock Bahan</h2>
             <FormRestock daftarBahan={daftarBahan} onRestock={handleRestock} />
             <RiwayatRestock riwayat={riwayatRestock} />
+          </section>
+        )}
+
+        {tabAktif === "inspirasi" && (
+          <section>
+            <h2>Inspirasi Menu Kopi</h2>
+            <p className="kosong">Referensi resep kopi dari API publik untuk ide menu baru.</p>
+            <InspirasiMenu />
           </section>
         )}
       </main>

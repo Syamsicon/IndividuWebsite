@@ -3,6 +3,7 @@ function Header({ tabAktif, onGantiTab }) {
     { key: "bahan", label: "Bahan" },
     { key: "menu", label: "Menu" },
     { key: "restock", label: "Restock Bahan" },
+    { key: "inspirasi", label: "Inspirasi Menu"},
   ];
 
   return (
